@@ -5,18 +5,6 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
 
-"""
-Before submitting the assignment, describe here in a few sentences what you would have built next if you spent 2 more hours on this project:
-
-I would have integrated structured input extraction using spaCy NER to reliably capture 
-character names and age signals from the user's request, feeding richer context to the 
-storyteller rather than the raw input string. I would also have added category-based YAML 
-configs per story type (adventure, animal friends, vehicle explorer etc.) so the storyteller 
-receives tailored arc guidance per category. Finally I would have implemented a session 
-history file to track morals and emotional themes used across stories, preventing repetition 
-across multiple bedtime sessions.
-"""
-
 load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
